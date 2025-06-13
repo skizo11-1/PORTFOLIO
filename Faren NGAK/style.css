@@ -1,0 +1,40 @@
+    
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* Custom styles */
+        #about, #projects, #contact, #testimonials {
+            padding: 60px 20px;
+        }
+        .section-title {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        /* Custom button */
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        /* Media Queries */
+        @media(max-width: 768px) {
+            #about, #projects, #contact, #testimonials {
+                padding: 30px 10px;
+            }
+        }
+   
