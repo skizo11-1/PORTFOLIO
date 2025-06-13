@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Pribadi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Custom styles */
+        #about,
+        #projects,
+        #contact,
+        #testimonials {
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #b8ac07;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Custom button */
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        /* Media Queries */
+        @media(max-width: 768px) {
+
+            #about,
+            #projects,
+            #contact,
+            #testimonials {
+                padding: 30px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Radclif Faren Gah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Saya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+<!--                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimoni</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Home -->
+    <header id="home" class="bg-warning text-center py-5" style="margin-top: 56px;">
+        <div class="container">
+            <img src="Gambar WhatsApp 2025-06-12 pukul 18.44.43_d0affb20.jpg" alt="Foto Profil"
+                class="profile-img mb-3">
+            <h1 class="mb-3">Radclif Faren Gah</h1>
+            <h4 class="mb-4">Web Developer & Designer</h4>
+            <p class="lead">Selamat datang di website portfolio saya. Mari kita buat karya yang luar biasa bersama!</p>
+            <a href="#about" class="btn btn-primary mt-3">Pelajari Lebih Lanjut</a>
+        </div>
+    </header>
+
+    <!-- Tentang Saya -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Saya</h2>
+            </div>
+            <p style="max-width: 700px; margin: 0 auto;">Halo, saya faren pendidikan terakhir saya SMA KRISTEN PAYETI jurusan IPA. Memiliki pengalaman dalam HTML, CSS, JavaScript, dan
+                Bootstrap. Saya selalu bersemangat untuk belajar teknologi baru dan menciptakan karya terbaik.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio / Proyek -->
+    <section id="projects" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="gambar/landing-page-template-business_23-2148254720.avif" class="card-img-top" alt="Proyek 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyek 1</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek pertama yang saya buat, menggunakan
+                                HTML dan Bootstrap.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="gambar/shopping-online-realistic-template-landing-page_52683-37300.avif" class="card-img-top" alt="Proyek 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyek 2</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek kedua yang saya buat, menggunakan
+                                JavaScript dan CSS.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="gambar/web-design-concept-with-flat-style_23-2147854553.avif" class="card-img-top" alt="Proyek 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyek 3</h5>
+                            <p class="card-text">Deskripsi singkat tentang proyek ketiga, menampilkan desain menarik dan
+                                responsif.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kontak</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5>Informasi Kontak</h5>
+                    <p><i class="fas fa-envelope"></i> nonafaren99@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +62 85 737 543 237</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Waingapu, Sumba Timur</p>
+                    <div>
+                        <a href="https://www.facebook.com/share/15o24HvEF5/" class="me-3 text-decoration-none"><i class="fab fa-facebook fa-2x"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Form Kontak</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="3"
+                                placeholder=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni / Klien / Sertifikat -->
+<!--   <section id="testimonials" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimoni & Sertifikat</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5>Testimoni dari Klien</h5>
+                    <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="blockquote p-3">"Kerja keras dan profesional, hasilnya memuaskan!"</p>
+                                <footer class="blockquote-footer text-end">Klien A</footer>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="blockquote p-3">"Website yang dibuat sangat responsif dan menarik."</p>
+                                <footer class="blockquote-footer text-end">Klien B</footer>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Sebelumnya</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Selanjutnya</span>
+                        </button>
+                    </div>
+                </div>
+            Sertifikat -->
+<!--                <div class="col-md-6 mb-4">
+                    <h5>Sertifikat dan Penghargaan</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-certificate"></i> Sertifikat Web Development - Dicoding
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-trophy"></i> Penghargaan Developer Terbaik 2024
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2025 Radclif Faren Gah. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
